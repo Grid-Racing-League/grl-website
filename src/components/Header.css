@@ -1,0 +1,109 @@
+/* ALWAYS USE REM, NO PX FOR RESPONSIBILITY */
+
+#header {
+    height: 6rem;
+    position: fixed;
+    width: calc(100% - 2rem);
+    z-index: 9;
+    box-shadow: rgba(0, 0, 0, .3) 0px 8px 24px;
+}
+#header-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background: rgb(16,18,31);
+    background: linear-gradient(135deg, rgba(16,18,31,1) 0%, rgba(19,50,145,1) 100%);
+    width: 100%;
+    height: 4rem;
+}
+.header-top-btn {
+    width: 6rem;
+    height: 2rem;
+    border-radius: 4px;
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+    background-color: transparent;
+    text-transform: uppercase;
+}
+.header-top-btn:hover {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.1);
+}
+#header-top-Home {
+    background-color: transparent;
+    border-radius: 4px;
+}
+#header-top-Home Img {
+    margin-top: 6px;
+}
+#header-top-Home:hover {
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.1);
+}
+
+#header-left {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+#header-right {
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+#header-top-JoinUs {
+    border-radius: 16px;
+    font-size: 1rem;
+    width: 7rem;
+    height: 2rem;
+    color: black;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+#header-top-JoinUs:hover {
+    cursor: pointer;
+    background-color: rgba(200,200,200,1);
+}
+
+#triangle {
+    position:absolute;
+    width: 0; 
+    height: 0; 
+    top: 4.5rem;
+    transform: translateX(450px);
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent;
+  
+    border-bottom: 24px solid white;
+}
+
+
+#header-bottom {
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    background: rgb(0,9,132);
+    background: linear-gradient(0deg, rgba(0,9,132,1) 0%, rgba(0,2,30,1) 100%);
+}
+.header-bottom-btn {
+    border-radius: 4px;
+    height: 6rem;
+    width: 13rem;
+    background-color: transparent;
+    color: white;   
+    text-transform: uppercase;
+}
+.header-bottom-btn h2 {
+    font-weight: 600;
+}
+.header-bottom-btn:hover {
+    background-color: rgba(255,255,255,0.1);
+    cursor: pointer;
+}
+.header-bottom-btn img {
+    width: 7rem;
+}
