@@ -1,5 +1,5 @@
 import Formula from './assets/Formula.jpg'
-import './Home.css'
+import './home/Home.css'
 import ytLogo from './assets/icons/ytLogo.png'
 import igLogo from './assets/icons/igLogo.png'
 import dcLogo from './assets/icons/dcLogo.png'
@@ -12,11 +12,11 @@ import p1Img from './assets/p1.png'
 import ferrariImg from './assets/Ferrari.png'
 import backgroundPattern from './assets/tracks01.png'
 
-import flagPlaceholder from './assets/flags/Italy.png'
+import HomeCalendar from './home/HomeCalendar.jsx'
+
 import { useState } from 'react'
 
 function Home() {
-    let [calBackgroundCol, setCalendarBackground] = useState("#000984")
 
     return(
         <div id="home">
@@ -101,159 +101,7 @@ function Home() {
                     </div>
                 </div>
             </div>
-            <div id="home-calendar">
-                <div id="home-calendar-top">
-                    <button className='home-calendar-top-btns' onClick={() => setCalendarBackground("#000984")}>MAIN</button>
-                    <button className='home-calendar-top-btns' onClick={() => setCalendarBackground("#00d126")}>ACADEMY</button>
-                    <button className='home-calendar-top-btns' onClick={() => setCalendarBackground("#a312b5")}>TALENT</button>
-                    <button className='home-calendar-top-btns' onClick={() => setCalendarBackground("#eabb00")}>JUNIOR</button>
-                    <button className='home-calendar-top-btns' onClick={() => setCalendarBackground("#ae0000")}>ROOKIE</button>
-                </div>
-                <div id="home-calendar-bottom" style={{ backgroundColor: calBackgroundCol}}>
-                    <div id="home-calendar-bottom-scrollable">
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                        <div className="home-calendar-race">
-                            <img src={flagPlaceholder}></img>
-                            <h4 className='home-calendar-h4'>ITÁLIE</h4>
-                            <h3 className='home-calendar-h3'>IMOLA</h3>
-                            <h1 className='home-calendar-h1'>02</h1>
-                            <h3 className='home-calendar-h3'>LEDEN</h3>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            {<HomeCalendar></HomeCalendar>}
             <div id="home-raceResult">
                 <h1>VÝSLEDKY ZÁVODU:</h1>
                 <h3 className="home-raceResult-h3">MAIN LEAGUE</h3>
