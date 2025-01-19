@@ -8,11 +8,10 @@ import sponsor1 from './assets/sponsor1.png'
 import sponsor2 from './assets/sponsor2.png'
 import pattern from './assets/weekScheduleBackgroundPattern.png'
 import JuniorVolno from './assets/JuniorVolno.png'
-import p1Img from './assets/p1.png'
-import ferrariImg from './assets/Ferrari.png'
 import backgroundPattern from './assets/tracks01.png'
 
 import HomeCalendar from './home/HomeCalendar.jsx'
+import HomeRaceResult from './home/HomeRaceResult.jsx'
 
 import { useState } from 'react'
 
@@ -102,111 +101,7 @@ function Home() {
                 </div>
             </div>
             {<HomeCalendar></HomeCalendar>}
-            <div id="home-raceResult">
-                <h1>VÝSLEDKY ZÁVODU:</h1>
-                <h3 className="home-raceResult-h3">MAIN LEAGUE</h3>
-                <h3 className="home-raceResult-h3">ŠPANĚLSKO</h3>
-                <div id="home-results-container">
-                    <div id="home-results-top">
-                        <div className="results-top-driver">
-                            <div className='res-top-top'>
-                                <img src={p1Img}></img>
-                            </div>
-                            <div className='res-top-bottom'>
-                                <h3>TOMÁŠ</h3>
-                                <h2>SPOUSTA</h2>
-                                <h3>2</h3>
-                            </div>
-                        </div>
-                        <div className="results-top-driver">
-                            <div className='res-top-top'>
-                                <img src={p1Img}></img>
-                            </div>
-                            <div className='res-top-bottom'>
-                                <h3>TOMÁŠ</h3>
-                                <h2>SPOUSTA</h2>
-                                <h3>WINNER</h3>
-                            </div>
-                        </div>
-                        <div className="results-top-driver">
-                            <div className='res-top-top'>
-                                <img src={p1Img}></img>
-                            </div>
-                            <div className='res-top-bottom'>
-                                <h3>TOMÁŠ</h3>
-                                <h2>SPOUSTA</h2>
-                                <h3>3</h3>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="home-results-bottom">
-                        <div className="home-results-bottom-driver">
-                            <div className="home-results-bottom-driver-pos">4</div>
-                            <img className="home-results-bottom-driver-img" src={p1Img}></img>
-                            <div className="home-results-bottom-driver-name">
-                                <h3 className="home-results-bottom-driver-name-first">Tomáš</h3>
-                                <h3 className="home-results-bottom-driver-name-last">Spousta</h3>
-                            </div>
-                            <img className="home-results-bottom-team" src={ferrariImg}></img>
-                        </div>
-                        <div className="home-results-bottom-driver">
-                            <div className="home-results-bottom-driver-pos">5</div>
-                            <img className="home-results-bottom-driver-img" src={p1Img}></img>
-                            <div className="home-results-bottom-driver-name">
-                                <h3 className="home-results-bottom-driver-name-first">Tomáš</h3>
-                                <h3 className="home-results-bottom-driver-name-last">Spousta</h3>
-                            </div>
-                            <img className="home-results-bottom-team" src={ferrariImg}></img>
-                        </div>
-                        <div className="home-results-bottom-driver">
-                            <div className="home-results-bottom-driver-pos">6</div>
-                            <img className="home-results-bottom-driver-img" src={p1Img}></img>
-                            <div className="home-results-bottom-driver-name">
-                                <h3 className="home-results-bottom-driver-name-first">Tomáš</h3>
-                                <h3 className="home-results-bottom-driver-name-last">Spousta</h3>
-                            </div>
-                            <img className="home-results-bottom-team" src={ferrariImg}></img>
-                        </div>
-                        <div className="home-results-bottom-driver">
-                            <div className="home-results-bottom-driver-pos">7</div>
-                            <img className="home-results-bottom-driver-img" src={p1Img}></img>
-                            <div className="home-results-bottom-driver-name">
-                                <h3 className="home-results-bottom-driver-name-first">Tomáš</h3>
-                                <h3 className="home-results-bottom-driver-name-last">Spousta</h3>
-                            </div>
-                            <img className="home-results-bottom-team" src={ferrariImg}></img>
-                        </div>
-                        <div className="home-results-bottom-driver">
-                            <div className="home-results-bottom-driver-pos">8</div>
-                            <img className="home-results-bottom-driver-img" src={p1Img}></img>
-                            <div className="home-results-bottom-driver-name">
-                                <h3 className="home-results-bottom-driver-name-first">Tomáš</h3>
-                                <h3 className="home-results-bottom-driver-name-last">Spousta</h3>
-                            </div>
-                            <img className="home-results-bottom-team" src={ferrariImg}></img>
-                        </div>
-                        <div className="home-results-bottom-driver">
-                            <div className="home-results-bottom-driver-pos">9</div>
-                            <img className="home-results-bottom-driver-img" src={p1Img}></img>
-                            <div className="home-results-bottom-driver-name">
-                                <h3 className="home-results-bottom-driver-name-first">Tomáš</h3>
-                                <h3 className="home-results-bottom-driver-name-last">Spousta</h3>
-                            </div>
-                            <img className="home-results-bottom-team" src={ferrariImg}></img>
-                        </div>
-                        <div className="home-results-bottom-driver">
-                            <div className="home-results-bottom-driver-pos">10</div>
-                            <img className="home-results-bottom-driver-img" src={p1Img}></img>
-                            <div className="home-results-bottom-driver-name">
-                                <h3 className="home-results-bottom-driver-name-first">Tomáš</h3>
-                                <h3 className="home-results-bottom-driver-name-last">Spousta</h3>
-                            </div>
-                            <img className="home-results-bottom-team" src={ferrariImg}></img>
-                        </div>
-                    </div>
-                </div>
-                <button id="home-results-changeBtn">Bottom 10</button>
-            </div>
+            {<HomeRaceResult></HomeRaceResult>}
         </div>
         
     )
