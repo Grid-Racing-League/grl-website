@@ -1,6 +1,6 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { StrictMode, useState } from 'react'
+//import { StrictMode, useState } from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router';
 import Header from './components/Header.jsx'
 import Footer from './components/Footer.jsx'
@@ -19,14 +19,11 @@ const Layout = ({ children }) => (
 function App() {
 
   return (
-    <StrictMode>
-      <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
-        <Routes>
-          <Route path="/" element={<Layout></Layout>}/>
-          <Route path="/home" element={<Layout><Home/></Layout>}/>
-        </Routes>
-      </Router>
-    </StrictMode>
+    <Router future={{ v7_startTransition: true, v7_relativeSplatPath: true }}>
+      <Routes>
+        <Route path="/" element={<Layout><Home/></Layout>}/>
+      </Routes>
+    </Router>
   )
 }
 const root = createRoot(document.getElementById('root'));

@@ -44,7 +44,12 @@ function HomeCalendar() {
             return response.json();
             })
             .then((data) => {
-            setRaces(data.races);
+                // Adding index as key to each race item
+                const racesWithKeys = data.races.map((race, index) => ({
+                    ...race,
+                    key: index.toString(), // Assuming index can be converted to string
+                }));
+                setRaces(racesWithKeys);
             })
             .catch((error) => console.error(error));
     }, [cL]);
@@ -71,7 +76,7 @@ function HomeCalendar() {
                 <div id="home-calendar-bottom-scrollable">
                     {races.length > 0 ? (
                         races.map((race, index) => (
-                            <div className="home-calendar-race" id={index}>
+                            <div className="home-calendar-race" key={index}>
                                 <img src={`/flags/${race.country}.png`} alt="My Image"></img>
                                 <h4 className='home-calendar-h4'>{race.country}</h4>
                                 <h3 className='home-calendar-h3'>{checkLocation(race.location)}</h3>

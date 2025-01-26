@@ -5,6 +5,7 @@ function homeRaceResult() {
     let [top10Display, setDriverDisplay] = useState(true)
 
     const drivers = Array.from({ lenght: 10},(_, index) => index + 1);
+
     return (
         <div id="home-raceResult">
             <h1>VÝSLEDKY ZÁVODU:</h1>
