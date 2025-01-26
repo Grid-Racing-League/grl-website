@@ -31,6 +31,15 @@ function HomeCalendar() {
 
     const [races, setRaces] = useState([]);
 
+    //const scrollableRef = useState(null);
+    // horizontalni scrollovani 
+    //const handleWheel = (event) => {
+    //    if (scrollableRef.current) {
+    //        event.preventDefault();
+    //        scrollableRef.current.scrollLeft += event.deltaY;
+    //    }
+    //}
+
     useEffect(() => {
         let apiBaseUrl = "https://grl.pindej.cz";
         let calendarEndpoint = "api/Calendar";
@@ -44,10 +53,9 @@ function HomeCalendar() {
             return response.json();
             })
             .then((data) => {
-                // Adding index as key to each race item
                 const racesWithKeys = data.races.map((race, index) => ({
                     ...race,
-                    key: index.toString(), // Assuming index can be converted to string
+                    key: index.toString(), // prida key pro kazdy race
                 }));
                 setRaces(racesWithKeys);
             })

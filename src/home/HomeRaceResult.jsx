@@ -111,7 +111,7 @@ function homeRaceResult() {
                         </div>
                     </div>
                 </div>
-                <div id="home-results-bottom10" style={{ display: top10Display ? "none" : "block"}}>
+                <div id="home-results-bottom10" style={{ display: top10Display ? "none" : "block", marginTop: "3.45rem"}}>
                     <div id="home-results-bottom" style={{ marginTop: "0rem"}}>
                         <div className="home-results-bottom-driver" style={{ marginTop: "0rem"}}>
                             <div className="home-results-bottom-driver-pos">11</div>

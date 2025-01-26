@@ -170,14 +170,18 @@
     height: 1rem;
     width: 10rem;
 }
-#home-calendar-bottom-scrollable::-webkit-scrollbar-thumb {
-    background: rgba(0, 0, 0, 0.6); /* Scrollbar thumb color */
-    border-radius: 2px; /* Rounded scrollbar corners */
-    height: 6px; /* Fixing thumb height */
-    max-height: 6px; /* Preventing it from becoming too large */
+#home-calendar-bottom-scrollable::-webkit-scrollbar-track {
+    margin-left: 4rem; 
+    margin-right: 4rem; 
 }
+#home-calendar-bottom-scrollable::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.8); 
+    border-radius: 2px; 
+    height: 6px;
+    max-height: 6px;
+}   
 #home-calendar-bottom-scrollable::-webkit-scrollbar-thumb:hover {
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.9);
 }
 
 #home-calendar-bottom-scrollable .home-calendar-race:nth-child(1) {
@@ -224,6 +228,7 @@
 #home-results-top {
     display: flex;
     gap: .5rem;
+    height: 11rem;
 }
 #home-raceResult {
     text-align: center;
@@ -248,6 +253,7 @@
 }
 .res-top-top {
     background-color: #C31313;
+    height: 9rem;
 }
 .res-top-top img {
     width: 9rem;
@@ -271,6 +277,7 @@
     margin-top: -6rem;
     z-index: 8;
     position: relative;
+    height: 8rem;
 }
 #home-results-bottom {
     margin-top: .5rem;
