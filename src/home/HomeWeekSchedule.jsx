@@ -1,4 +1,5 @@
 import pattern from './../assets/weekScheduleBackgroundPattern.png'
+
 import JuniorVolno from './../assets/JuniorVolno.png'
 import backgroundPattern from './../assets/tracks01.png'
 
@@ -64,35 +65,35 @@ function HomeWeekSchedule() {
                     if (racesThisWeek.length > 0) {
                         racesThisWeek.forEach(race => {
                             if (league === "Main") {
-                                setMainTrackName(race.location);
+                                setMainTrackName(race.country);
                                 setMainDayName("Neděle");
                                 const raceDate = new Date(race.date);
                                 const formattedDate = `${String(raceDate.getDate()).padStart(2, '0')}.${String(raceDate.getMonth() + 1).padStart(2, '0')} 19:00`;
                                 setMainDate(formattedDate);
                             }
                             if (league === "Academy") {
-                                setAcademyTrackName(race.location);
+                                setAcademyTrackName(race.country);
                                 setAcademyDayName("Pondělí");
                                 const raceDate = new Date(race.date);
                                 const formattedDate = `${String(raceDate.getDate()).padStart(2, '0')}.${String(raceDate.getMonth() + 1).padStart(2, '0')} 19:00`;
                                 setAcademyDate(formattedDate);
                             }
                             if (league === "Talent") {
-                                setTalentTrackName(race.location);
+                                setTalentTrackName(race.country);
                                 setTalentDayName("Sobota");
                                 const raceDate = new Date(race.date);
                                 const formattedDate = `${String(raceDate.getDate()).padStart(2, '0')}.${String(raceDate.getMonth() + 1).padStart(2, '0')} 20:00`;
                                 setTalentDate(formattedDate);
                             }
                             if (league === "Junior") {
-                                setJuniorTrackName(race.location);
+                                setJuniorTrackName(race.country);
                                 setJuniorDayName("Úterý");
                                 const raceDate = new Date(race.date);
                                 const formattedDate = `${String(raceDate.getDate()).padStart(2, '0')}.${String(raceDate.getMonth() + 1).padStart(2, '0')} 20:00`;
                                 setJuniorDate(formattedDate);
                             }
                             if (league === "Rookie") {
-                                setRookieTrackName(race.location);
+                                setRookieTrackName(race.country);
                                 setRookieDayName("Středa");
                                 const raceDate = new Date(race.date);
                                 const formattedDate = `${String(raceDate.getDate()).padStart(2, '0')}.${String(raceDate.getMonth() + 1).padStart(2, '0')} 20:00`;
@@ -162,14 +163,14 @@ function HomeWeekSchedule() {
                     <img className="weekSchedule-pattern" src={pattern}></img>
                     <div className="weekSchedule-league week-Junior">
                         <div className="weekSchedule-league-spacer">
-                            <h1 className="wSchdl-h1">Junior</h1>
+                            <h1 className="wSchdl-h1">JUNIOR</h1>
                             <h4 className="wSchdl-h4">{JuniorTrackName}</h4>
                             <h3 className="wSchdl-h3">{JuniorDayName}</h3>
                             <h2 className="wSchdl-h2">{JuniorDate}</h2>
                         </div>
                     </div>
                 </div>
-                <div className="weekSchedule-league-background">
+                <div className="weekSchedule-league-background" style={{backgroundImage: `url(${JuniorVolno})`}}>
                     <img className="weekSchedule-pattern" src={pattern}></img>
                     <div className="weekSchedule-league week-Rookie">
                         <div className="weekSchedule-league-spacer">

@@ -206,7 +206,7 @@ function homeRaceResult() {
                     </div>
                 </div>
             </div>
-            <button id="home-results-changeBtn" onClick={() => setDriverDisplay((prev) => !prev)}>Bottom 10</button>
+            <button id="home-results-changeBtn" onClick={() => setDriverDisplay((prev) => !prev)}>{top10Display ? "Bottom 10" : "Top 10"}</button>
         </div>
     )
 }
